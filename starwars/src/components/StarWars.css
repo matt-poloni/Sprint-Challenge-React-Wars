@@ -1,0 +1,21 @@
+.CharList {}
+
+.CharList .Char {
+  background-color: white;
+  margin: 2.4rem;
+  padding: 2.4rem;
+  border-radius: 0.5rem;
+}
+
+.CharList .Char p {
+  margin: 1rem 0;
+}
+
+.CharList .Char .char-name {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.CharList .Char .data-key {
+  font-weight: bold;
+}
