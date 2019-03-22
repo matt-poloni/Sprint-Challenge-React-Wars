@@ -1,11 +1,11 @@
 .CharList {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .CharList .Char {
-  background-color: white;
+  background-color: rgba(255, 255, 255, .55);
   margin: 1.2rem;
   padding: 2.4rem;
   border-radius: 0.5rem;
