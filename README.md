@@ -24,13 +24,21 @@ In this challenge, create a web page that presents a styled list of Star Wars ch
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
+- [x] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
-- [ ] What does it mean to _think_ in react?
+* React is an unopinionated JS library used to render user interface components more efficiently by only re-rendering those components affected by a change in the state of a parent (or grandparent, or great grandparent, etc.) element. In doing so, it offloads data from the DOM to its own virtual DOM that keeps track of what the DOM should ideally look like at any given point of time, figures out the fewest steps possible to make the changes to get there, and executes those changes on the DOM for us. As a result, we can build much more powerful applications without nearly the same burden on browsers as we'd otherwise have while still delivering a smooth experience to the end users.
 
-- [ ] Describe state.
+- [x] What does it mean to _think_ in react?
 
-- [ ] Describe props.
+* It means that you need to break the interface down into a hierarchy of its components. You also need to model how data would best pass down through that hierarchy and identify which data is actually "state" (described below) that should be managed by a common ancestor to any descendant components that need it. Any functions needed by child components to change state data should be fed down to those components through props from the component where the state data lives, letting that ancestor component set new states as necessary.
+
+- [x] Describe state.
+
+* State is the underlying data model of your application. It's the (potentially changing) minimal data needed to compute all data the application may eventually need that can then be fed down selectively (as props) to the descendant components that need any particular piece of that model. It is originally defined within the class constructor of the component that will be managing the state.
+
+- [x] Describe props.
+
+* Props are properties on a component passed down from an ancestor further up the hierarchy that the descendant component will then use upon rendering. Their ultimate source may be from state data or simple hard-coding when the component (or one of its ancestors) was called within a render function.
 
 ## Project Set Up
 
