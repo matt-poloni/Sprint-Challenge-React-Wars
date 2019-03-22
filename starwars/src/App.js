@@ -38,18 +38,23 @@ class App extends Component {
   };
 
   render() {
+    const prevBtn = this.state.prevChars === null ? '' :
+      <PageNav
+        text="Previous"
+        onClick={() => this.getCharacters(this.state.prevChars)}
+      />;
+    const nextBtn = this.state.nextChars === null ? '' :
+      <PageNav
+        text="Next"
+        onClick={() => this.getCharacters(this.state.nextChars)}
+      />;
+
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
         <div className="wrap-pagenav">
-          <PageNav
-            text="Previous"
-            onClick={() => this.getCharacters(this.state.prevChars)}
-          />
-          <PageNav
-            text="Next"
-            onClick={() => this.getCharacters(this.state.nextChars)}
-          />
+          {prevBtn}
+          {nextBtn}
         </div>
         <CharList list={this.state.starwarsChars} />
       </div>
