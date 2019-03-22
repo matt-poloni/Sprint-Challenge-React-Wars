@@ -5,8 +5,8 @@ const Char = props => {
     <li className="Char">
       <h2 className="char-name">{props.item.name}</h2>
       <ul className="char-data">
-        <li><span className="data-key">Height: </span>{props.item.height}</li>
-        <li><span className="data-key">Mass: </span>{props.item.mass}</li>
+        <li><span className="data-key">Height: </span>{props.item.height} cm</li>
+        <li><span className="data-key">Mass: </span>{props.item.mass} kg</li>
         <li><span className="data-key">Hair Color: </span>{props.item.hair_color}</li>
         <li><span className="data-key">Skin Color: </span>{props.item.skin_color}</li>
         <li><span className="data-key">Eye Color: </span>{props.item.eye_color}</li>
