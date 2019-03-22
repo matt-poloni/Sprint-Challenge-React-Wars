@@ -1,0 +1,33 @@
+.CharList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.CharList .Char {
+  background-color: rgba(255, 255, 255, .55);
+  margin: 1.2rem;
+  padding: 2.4rem;
+  border-radius: 0.5rem;
+  text-align: left;
+  width: 30rem;
+}
+
+.CharList .Char .char-name {
+  font-size: 2.4rem;
+  margin-bottom: 2.4rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.CharList .Char ul {
+  margin-top: 2.4rem;
+}
+
+.CharList .Char li {
+  margin: 1rem 0;
+}
+
+.CharList .Char .data-key {
+  font-weight: bold;
+}
