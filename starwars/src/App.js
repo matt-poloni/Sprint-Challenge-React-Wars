@@ -40,7 +40,7 @@ class App extends Component {
   render() {
     const prevBtn = this.state.prevChars === null ? '' :
       <PageNav
-        text="Previous"
+        text="Prev"
         onClick={() => this.getCharacters(this.state.prevChars)}
       />;
     const nextBtn = this.state.nextChars === null ? '' :
